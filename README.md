@@ -13,7 +13,7 @@ This is a basic and straightforward Telegram Mini App(TMA) implemented using pla
 - Deployment URL:
 
 ## Features
-- Minimalistic user interface.
+- shit ui.
 - No external libraries or frameworks used.
 - Easy to understand and modify.
 
