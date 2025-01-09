@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>stlite app</title>
+    <title>myshiet</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.75.0/build/stlite.css"
@@ -28,7 +28,7 @@ import numpy as np
 
 st.title("OpenCV sample")
 
-input_mode = st.radio("Input mode", ["Sample", "Camera", "Upload"])
+input_mode = st.radio("Input mode", ["Sample", "Upload"])
 if input_mode == "Sample":
     img = cv2.imread("data/logo.png")
 else:
