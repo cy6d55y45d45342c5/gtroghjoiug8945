@@ -29,20 +29,19 @@ import numpy as np
 st.title("OpenCV sample")
 
 input_mode = st.radio("Input mode", ["Upload!!!"])
-if:
-	st.info("""
-			Don't worry! The photo data is processed on your browser
-			and never uploaded to any remote servers.
-	""")
-	bytes_data = None
-	if:
-			uploaded_file = st.file_uploader("Choose an image file", type=['png', 'jpg'])
-			if uploaded_file is not None:
-					bytes_data = uploaded_file.getvalue()
-	if bytes_data is None:
-			st.stop()
-	img = cv2.imdecode(np.frombuffer(bytes_data, np.uint8), cv2.IMREAD_COLOR)
 
+st.info("""
+		Don't worry! The photo data is processed on your browser
+		and never uploaded to any remote servers.
+""")
+bytes_data = None
+if:
+		uploaded_file = st.file_uploader("Choose an image file", type=['png', 'jpg'])
+		if uploaded_file is not None:
+				bytes_data = uploaded_file.getvalue()
+if bytes_data is None:
+		st.stop()
+img = cv2.imdecode(np.frombuffer(bytes_data, np.uint8), cv2.IMREAD_COLOR)
 elif img is None:
 		st.stop()
 
