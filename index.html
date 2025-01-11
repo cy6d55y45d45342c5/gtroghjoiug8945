@@ -35,7 +35,7 @@ st.info("""
 		and never uploaded to any remote servers.
 """)
 bytes_data = None
-if:
+if input_mode == "Upload!!!":
 		uploaded_file = st.file_uploader("Choose an image file", type=['png', 'jpg'])
 		if uploaded_file is not None:
 				bytes_data = uploaded_file.getvalue()
